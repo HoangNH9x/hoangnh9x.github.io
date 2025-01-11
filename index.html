@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+.myform {
+    display: flex;
+    flex-direction: column;
+}
+</style>
+<body>
+
+<!-- flex box dung de chinh linh hoat css trong html-->
+<div style="display: flex; flex-direction: row;background: darkred;flex-wrap: wrap;
+justify-content: space-evenly;font-family: 'Agency FB';margin: 6px; " >
+    <div style="padding: 6px;" ><a href=" "><img  src="./126572_home_house_icon.png" height="15px" width="15px" alt="Home"></a></div>
+    <div style="color:white;padding: 6px" >Star</div>
+    <div style="color:white;padding: 6px">Ciné</div>
+    <div style="color:white;padding: 6px">Musik</div>
+    <div style="color:white;padding: 6px">Beauty and Fashion</div>
+    <div style="color:white;padding: 6px">Đời Sống</div>
+
+</div>
+<!-- The form: nhap thong tin gui thong tin ve cho may chu  -->
+<!-- thẻ type: chỉ định kểu giá trị khi nhập vào-->
+<!-- thẻ input: nhập ký tự từ bàn phím-->
+<!-- Thẻ label: thể hiện tên cho input, dùng kèm với input-->
+<form  style="border: 1px solid black;border-radius: 10px;padding: 10px" >
+  <div class="myform">
+    <h1> Vui long nhap email va password</h1>
+<label>Email:</label>
+<label>
+    <input type="email"  placeholder="Vui lòng nhập Email.............">
+</label>
+    <label>Password:</label>
+<label>
+    <input type="Password"  placeholder="Vui lòng nhập Mật khẩu.............">
+</label>
+    <label for="checkbox">Check box: </label>
+    <input id="checkbox" type="checkbox" placeholder="Vui lòng nhập Mật khảu">
+
+    <label for="number">Number: </label>
+    <input id="number" type="number" placeholder="Vui lòng nhập Số ĐT">
+
+    <label for="range">Range </label>
+    <input id="range" type="range" min="1" max="100" placeholder="Vui lòng nhập Số ">
+
+    <label for="date">Date: </label>
+    <input id="date" type="date" placeholder="Vui lòng nhập Số ">
+
+    <label for="month">Tháng </label>
+    <input id="month" type="month" >
+
+    <label for="number">Full Date Month: </label>
+    <input id="date-local" type="datetime-local" step="1">
+
+    <label for="week">Number: </label>
+    <input id="week" type="week">
+
+    <label for="color">Chọn màu: </label>
+    <input id="color" type="color">
+
+      <label for="radio">Radio: Chọn một mục </label>
+      <input id="radio" type="radio" value="op1">
+
+      <label for="radio">Radio: Chọn một mục</label>
+      <input id="radio" type="radio" value="op2">
+
+      <!-- gộp vào 1 nhóm-->
+      <fieldset>
+          <legend>Giới tính:</legend>
+          <input type="radio" id="Nam" value="op1" >
+          <input type="radio" id="nữ" value="op2">
+      </fieldset>
+
+      <label for="search">Radio: Chọn một mục </label>
+      <input id="search" type="search" >
+
+
+  </div>
+</form>
+</body>
+</html>
