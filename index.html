@@ -3,7 +3,7 @@
   <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Menu bai tap">
     <meta name="keywords" content="menu, bai tap">
     <title>BTVN</title>
@@ -19,7 +19,6 @@
         margin: -14px 10px;
         padding-left: 25px;
         opacity: 0.5;
-
       }
       ul{
         fonts-size: 13px;
@@ -72,11 +71,15 @@
       .button{
         position: relative;
         display: inline-block;
+        font-weight: bold;
         right: 144px;
         border-radius: 999px;
         padding: 8px 32px;
         background-color: #3f8efc;
+        color: white;
+        cursor: pointer;
       }
+
       .input{
         background-color: white;
         margin-top: 30px;
@@ -88,7 +91,10 @@
         border-radius: 999px;
       }
       body{
-
+      background-repeat: repeat;
+      background-size: cover;
+      background-position: revert;
+      padding-bottom: 180 px;
       }
       .img1{
         margin-left: 700px;
@@ -99,6 +105,7 @@
       }
       .hidden{
         display: none;
+
       }
     </style>
   </head>
@@ -111,7 +118,7 @@
     </div>
 
     <div id="show">
-      <ul>
+      <ul class="a1">
         <li><a class="lihome" href="">HOME</a></li>
         <li><a href="">FEATURES</a></li>
         <li><a href="">PRICING</a></li>
@@ -150,7 +157,7 @@
      </div>
     <div>
     <label>
-      <input class="input" type="email" placeholder="Enter your email">
+      <input class="input" type="text"  placeholder="Enter your email">
       <button class="button" type="submit">SUBCRIBE</button>
     </label>
     </div>
