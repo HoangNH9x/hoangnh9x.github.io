@@ -1,229 +1,158 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thực hành">
-    <meta name="keywords" content="Thực hành">
-    <link rel="icon" href=".idea/favicon-16x16.png" type="image/png">
-    <title>Bài thực hành 3</title>
 
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Menu bai tap">
+    <meta name="keywords" content="menu, bai tap">
+    <title>BTVN</title>
     <style>
+      nav{
+        background-color: white;
+        padding:5px 100px;
+        margin-bottom: 40px;
+      }
+      .div1{
+        display: flex;
+        float: left;
+        margin: -14px 10px;
+        padding-left: 25px;
+        opacity: 0.5;
 
-        .bai2 {
-            background-color: lightgray;
-            margin-bottom: 20 px;
-            border-top: 5px solid black;
-        }
-        .h1bai2 {
-            text-align: center;
-        }
+      }
+      ul{
+        fonts-size: 13px;
+        font-family: sans-serif;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-right: 5px;
+      }
+      li{
+        list-style: none;
+        margin-right: 0px;
+        margin-left: 30px;
+      }
+      .lihome{
+        color: #3f8efc;
+      }
 
-        .bai3 {
-            width: 160px;
-            height: 105px;
-            background-color: dodgerblue ;
-            border: 6px solid steelblue;
-            padding-right: 65px;
-            padding-left: 15px;
-            padding-top: 25px;
-            margin-left: 40px;
-            font-family: "Times New Roman" ;
-        }
+      a{
+        text-decoration: none;
+        color: black;
+      }
+      a:hover{
+        color: #3f8efc;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+      p{
+        color: #00000080;
+        font-family: sans-serif;
+        font-size:17px;
+        margin-left: 100px;
+        margin-top: -350px;
+      }
+      .div2{
+        margin-left: 100px;
+        font-family: sans-serif;
+        font-size: 30px;
+      }
+      h1{
+        margin-left: 100px;
+        margin-top: 130px;
+        font-family: sans-serif;
+        font-size: 13px ;
+        color: #3f8efc;
+        letter-spacing: 6px;
+      }
+      .button{
+        position: relative;
+        display: inline-block;
+        right: 144px;
+        border-radius: 999px;
+        padding: 8px 32px;
+        background-color: #3f8efc;
+      }
+      .input{
+        background-color: white;
+        margin-top: 30px;
+        margin-left: 93px;
+        padding-left: 25px;
+        padding-right: 235px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        border-radius: 999px;
+      }
+      body{
 
-        .bai4 {
-            background-color: lightgrey;
-            margin-left: 20px;
-            margin-right: 20px;
-            padding-top: 45px;
-            padding-bottom: 45px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            color: white;
-        }
-        .divbai4 {
-            background-color: deepskyblue;
-            margin-left: 1px;
-            margin-right: 1px;
-            padding-left: 35px;
-            padding-right: 35px;
-            padding-top: 25px;
-            padding-bottom: 25px;
-        }
-
-        .bai5 {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-left: 50px;
-            margin-right: 50px ;
-        }
-        .divbai5 {
-            background-color: deepskyblue;
-            color: white;
-            width: 250px;
-            padding-top: 8px;
-            padding-bottom: 8px;
-        }
-
-        .divh1bai6 {
-            border-top: 5px solid black;
-        }
-        .formbai6 {
-            border: 2px solid lightgray;
-            border-radius: 5px;
-            background-color: lightgrey;
-            padding-top: 15px;
-            padding-bottom: 18px;
-            padding-left: 15px;
-            padding-right: 15px;
-            margin-left: 250px;
-            margin-right: 310px;
-            display: flex;
-            flex-direction: column;
-        }
-        .labelbai6 {
-            padding-right: 238px;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-            border: 1px solid lightgray;
-            border-radius: 5px;
-        }
-        .labelmessbai6 {
-            padding-right: 238px;
-            padding-bottom: 100px;
-            border: 1px solid lightgray;
-            border-radius: 5px;
-        }
-        .buttonbai6 {
-            background-color: mediumseagreen;
-            color: white;
-            border: 2px solid mediumseagreen;
-            border-radius: 5px;
-            display: inline-block;
-            cursor: pointer;
-            margin-top: 20px;
-            padding-top: 9px;
-            padding-bottom: 9px;
-            padding-left: 10px;
-            padding-right: 10px;
-            width: 70px;
-        }
-
-        .tablebai6 {
-            margin-left: 2px;
-            border-radius: 3px;
-        }
-
-        .ulbai8 {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            border: 1px solid black;
-            background-color: black;
-            padding-bottom: 35px;
-            padding-top: 20px;
-        }
-        .ilbai8 {
-            display: inline;
-            float: left;
-            padding-left: 20px;
-            color: white;
-            cursor: pointer;
-        }
+      }
+      .img1{
+        margin-left: 700px;
+        margin-top: -150px;
+      }
+      #show:hover div{
+        display: block;
+      }
+      .hidden{
+        display: none;
+      }
     </style>
-</head>
-<body>
-<h1> Welcome to my webpage</h1>
-<p>Bài 1:</p>
-<p>This is a paragraph of text
-<ul>
-    <li>List items 1</li>
-    <li>List items 2</li>
-    <li>List items 3</li>
-</ul>
-</p>
-<hr>
-<p>Bài 2:</p>
-<div class="bai2" >
-    <h1 class="h1bai2"> Styled Heading</h1>
-    <div>This is a styled paragraph with a custom font,color and lỉne height</div>
-</div>
-<hr>
-<p>Bài 3:</p>
-<pre class="bai3">
-This is a box with padding,
-border and margin.
-</pre>
-<hr>
-<p>Bài 4:</p>
-<div  class="bai4">
-    <div class="divbai4">1</div>
-    <div class="divbai4">2</div>
-    <div class="divbai4">3</div>
-</div>
-<hr>
-<p>Bài 5:</p>
-<div class="bai5">
-    <div class="divbai5" >column 1</div>
-    <div class="divbai5">column 2</div>
-    <div class="divbai5">column 3</div>
-</div>
-<hr>
-<p>Bài 6:</p>
-<div>
-    <p>Lưu ý:</p>
-    <h1 class="divh1bai6"><strong>Contact Us</strong></h1>
-    <form class="formbai6">
-        <label>Name:</label>
-        <label>
-            <input class="labelbai6" type="text" placeholder=" " >
-        </label>
+  </head>
+  <body>
+  <nav>
+    <div class="div1">
+      <ul>
+        <li><a href="#home"><img width="110px" height="48px" src="https://as1.ftcdn.net/v2/jpg/03/99/53/44/1000_F_399534445_zG1tMcAn0q7bCaPw2Lp5ZWiBiBgQYxvN.jpg" alt="logomenu"></a></li>
+      </ul>
+    </div>
 
-        <label>Email:</label>
-        <label>
-            <input class="labelbai6" type="email" placeholder=" ">
-        </label>
-
-        <label>Message:</label>
-        <label>
-            <input class="labelmessbai6" type="text" placeholder=" ">
-        </label>
-
-        <button class="buttonbai6" type="Send">Send</button>
-    </form>
-</div>
-<hr>
-<p>Bài 7:</p>
-<h1>My Image Gallery</h1>
-<table>
-    <tr>
-        <td><img class="tablebai6" src="https://picsum.photos/200/200?random=1" atl="Ảnh núi"></td>
-        <td><img class="tablebai6" src="https://picsum.photos/200/200?random=2" alt="Ảnh biển"></td>
-        <td><img class="tablebai6" src="https://picsum.photos/200/200?random=3" alt="Ảnh test"></td>
-    </tr>
-
-    <tr>
-        <td><img class="tablebai6" src="https://picsum.photos/200/200?random=4" alt="Ảnh test"> </td>
-        <td><img class="tablebai6" src="https://picsum.photos/200/200?random=5" alt="Ảnh test"> </td>
-        <td><img class="tablebai6" src="https://picsum.photos/200/200?random=6" alt="Ảnh test"> </td>
-    </tr>
-</table>
-<hr>
-<p>Bài 8:</p>
-<div>
-    <nav>
-        <ul class="ulbai8">
-            <li class="ilbai8">Home</li>
-            <li class="ilbai8">About</li>
-            <li class="ilbai8">Service</li>
-            <li class="ilbai8">Contact</li>
-        </ul>
-    </nav>
-<h1>Welcome to Ours Website</h1>
-      This is a basic webpage with a navigation menu
-</div>
-
-</body>
+    <div id="show">
+      <ul>
+        <li><a class="lihome" href="">HOME</a></li>
+        <li><a href="">FEATURES</a></li>
+        <li><a href="">PRICING</a></li>
+        <li ><a href="">FAQ</a></li>
+        <li ><a href="">ABOUT</a></li>
+        <li ><a href="">BLOG
+          <div class="hidden">
+            <ul>
+            <li>BLOG</li>
+            <li>BLOG LIST</li>
+            <li>BLOG DETAIL</li>
+          </ul>
+          </div>
+        </a></li>
+        <li ><a href="">CONTACT</a></li>
+        <li><a href=""><img id="img" width="18px" height="18px" src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Facebook_glyph_svg-512.png" alt="logofacebook"></a></li>
+        <li><a href=""><img width="17px" height="17px" src="https://cdn3.iconfinder.com/data/icons/social-media-2478/24/twiter-512.png" alt="insta"></a></li>
+        <li><a href=""><img width="17px" height="17px" src="https://cdn4.iconfinder.com/data/icons/social-media-black-white-2/600/Instagram_glyph_svg-512.png" alt="twitter"></a></li>
+      </ul>
+    </div>
+  </nav>
+    <div>
+      <h1>AWESOME</h1>
+    </div>
+    <div class="div2">
+      <h2>We Are <br>Creative Kucra Agency</h2>
+     </div>
+  <div class="img1">
+    <img width="680" height="520" src="https://preview.pichforest.com/kucra/layouts/images/home/home1.png">
+  </div>
+    <div>
+      <p>Carefully crafted after analyzing the needs of different<br>
+      industries and the design achieves a great balance<br> between purpose
+       & presentation.
+      </p>
+     </div>
+    <div>
+    <label>
+      <input class="input" type="email" placeholder="Enter your email">
+      <button class="button" type="submit">SUBCRIBE</button>
+    </label>
+    </div>
+  </body>
 </html>
